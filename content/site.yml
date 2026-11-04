@@ -1,0 +1,89 @@
+# Site structure: sections and page order for the sidebar, home outline, and next/previous links.
+# Each page id must match a file in content/pages/<id>.md.
+# nav = the short label shown in the sidebar.  sub: true = indented under the page above it.
+# single: true = the section has just one page and no sub-list in the sidebar.
+
+sections:
+  - title: "Introduction & overview"
+    single: true
+    pages:
+      - id: introduction
+        nav: "Introduction & overview"
+
+  - title: "Public engagement"
+    pages:
+      - id: goal-of-engagement
+        nav: "The goal of public engagement"
+      - id: who-is-involved
+        nav: "Who is involved"
+      - id: layers-of-government
+        nav: "Layers of government"
+      - id: when-to-get-involved
+        nav: "How and when to get involved"
+      - id: before-a-decision
+        nav: "Before a decision"
+      - id: during-a-decision
+        nav: "During a decision"
+      - id: after-a-decision
+        nav: "After a decision"
+      - id: the-floor
+        nav: "The floor: what the law requires"
+      - id: the-ceiling
+        nav: "The ceiling: what’s possible"
+
+  - title: "AI-related decisions in Central Oregon"
+    pages:
+      - id: what-is-ai
+        nav: "What we mean by “AI”"
+      - id: where-ai-shows-up
+        nav: "Where AI shows up locally"
+      - id: infrastructure
+        nav: "Infrastructure behind AI"
+      - id: why-now
+        nav: "Why AI is relevant now"
+      - id: range-of-decisions
+        nav: "The range of AI decisions"
+      - id: what-makes-ai-different
+        nav: "What makes AI decisions different"
+      - id: case-studies
+        nav: "Case studies"
+      - id: case-bend-la-pine
+        nav: "Bend-La Pine AI policy"
+        sub: true
+      - id: case-data-centers
+        nav: "Prineville vs. La Pine"
+        sub: true
+      - id: case-license-plate-cameras
+        nav: "Bend’s license plate cameras"
+        sub: true
+
+  - title: "Defining the problem"
+    pages:
+      - id: structural-gaps
+        nav: "Gaps in public input"
+      - id: supporting-engagement
+        nav: "What would help"
+      - id: questions-for-delegates
+        nav: "Questions for delegates"
+
+  - title: "Developing recommendations"
+    pages:
+      - id: tradeoffs
+        nav: "Tradeoffs to weigh"
+      - id: lessons-from-elsewhere
+        nav: "Lessons from other places"
+      - id: case-loudoun
+        nav: "Loudoun County, Virginia"
+        sub: true
+      - id: case-hanford
+        nav: "Hanford Advisory Board"
+        sub: true
+      - id: case-oakland
+        nav: "Oakland Privacy Commission"
+        sub: true
+      - id: policy-options
+        nav: "Example policies"
+
+# Pages that exist but aren't in the sidebar list or reading order.
+unlisted:
+  - review-notes
