@@ -42,7 +42,16 @@ sections:
       - id: why-now
         nav: "Why AI is relevant now"
       - id: range-of-decisions
-        nav: "The range of AI decisions"
+        nav: "How AI decisions are made"
+      - id: government-use
+        nav: "Government use"
+        sub: true
+      - id: planning-permissions
+        nav: "Planning & permissions"
+        sub: true
+      - id: regulations
+        nav: "Regulations"
+        sub: true
       - id: what-makes-ai-different
         nav: "What makes AI decisions different"
       - id: case-studies

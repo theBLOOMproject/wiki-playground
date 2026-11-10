@@ -4,5 +4,5 @@ status: soon
 ---
 
 ::: coming-soon
-This page is still being written. It will analyze the decisions mapped in [the range of AI-related decisions](#range-of-decisions) to find where public input is missing or weak.
+This page is still being written. It will analyze the decisions mapped in [how AI-related decisions are made](#range-of-decisions) to find where public input is missing or weak.
 :::

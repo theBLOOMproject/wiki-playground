@@ -5,7 +5,7 @@ status: draft
 
 ::: keypoints
 - Accountability means reporting results, justifying spending, and closing the loop with the people who gave input.
-- Oregon expects to publish a list of state AI uses, and Prineville’s taxing districts are choosing how to spend new data center tax revenue.
+- Oregon expects to publish a list of state AI uses, and public-facing state AI must offer a way to give feedback.
 - Ways to challenge a decision include school board appeals, the Land Use Board of Appeals, public meeting grievances, and ballot measures.
 - In land use appeals, an issue usually must be raised at the local hearing first (“raise it or waive it”).
 :::
@@ -13,24 +13,25 @@ status: draft
 ## Accountability
 
 ::: lead-strong
-**Government shares what happened after a policy takes effect, checks that it was a good use of public money, and is ready to change course.**
+**The government shares what happened after a policy takes effect, checks that it was a good use of public money, and is ready to change course if needed.**
 :::
 
-**Why it matters.** Accountability means public officials, through open processes, explain their decisions, justify how public money was used, report on results, and take responsibility for how things turned out. {src: Utah book} It also means closing the loop with the people who gave input. Kathi Barguil said institutions often lose people at this step: they ask for ideas, then never say how the input was used or why it wasn’t. “Community members want to know that the time that they put in mattered.” {src: CC Mtg 4 Pt 1, Oct 14, ~57:23}
+**Why it matters.** Accountability means public officials, through open processes, explain their decisions, justify how public money was used, report on results, and take responsibility for how things turned out. {src: Utah book} At the very least, it means closing the loop with the people who gave input. Kathi Barguil said institutions often lose people at this step: they ask for ideas, then never say how the input was used or why it wasn’t. “Community members want to know that the time that they put in mattered.” {src: CC Mtg 4 Pt 1, Oct 14, ~57:23}
 
 **What it looks like.**
 
-- **State of Oregon.** A public list of state AI uses is expected within about six months, along with an annual report to the Governor and an AI adoption plan from each agency. Public-facing AI must have a way for users to give feedback, with review and escalation. {src: CC Mtg 3, Oct 9}
-- **Prineville.** The first data center property becomes taxable in 2027. The local taxing districts are jointly choosing projects each has heard about from the community. What role the public has in that choice is an open question delegates could consider. {src: CC Mtg 2, Oct 1; CC Mtg 4 Pt 1, Oct 14}
+- **Feedback requirements for technologies.** A public list of state AI uses is expected within about six months, along with an annual report to the Governor and an AI adoption plan from each agency. Public-facing AI must have a way for users to give feedback, with review and escalation. {src: CC Mtg 3, Oct 9}
 - **Audits.** The Oregon Secretary of State’s Audits Division reviews how state agencies spend money and whether programs work, and publishes its findings. {added: add link}
 
-{gap: an accountability example from outside Oregon.}
+{team: ORBB placeholder: “Addressing concerns” (Offshore Wind Energy example).}
 
 ## Appeal
 
 ::: lead-strong
 **If a decision or policy isn’t working, or wasn’t made properly, the public should have ways to challenge it.**
 :::
+
+{team: ORBB: “Why it matters” and “Challenges” for Appeal are still blank.}
 
 **What it looks like.**
 

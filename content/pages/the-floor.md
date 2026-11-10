@@ -1,5 +1,5 @@
 ---
-title: "What laws shape public engagement? The floor"
+title: "The floor: what is the minimum public engagement that the government has to support?"
 status: draft
 ---
 
@@ -10,7 +10,7 @@ status: draft
 - Executive offices and staff can make many decisions with little public review.
 :::
 
-**The “floor” is what the law requires. In Oregon, the public has a right to watch most government decisions being made, but usually not a right to speak, except in certain cases like land use and budget hearings.** Governing bodies set their own rules for public comment. {added: [City of Springfield summary of OGEC training](https://springfield-or.gov/wp-content/uploads/2026/01/Memo-Oregon-Public-Meeting-Law_Final.pdf); [Deschutes County guide to Public Meetings Law](https://www.deschutescounty.gov/sites/default/files/fileattachments/administration/page/26674/reference_guide_-_public_meetings_law.pdf)}
+In Oregon, the public has a right to watch most government decisions being made, but usually not a right to speak, except in certain cases like land use and budget hearings. Governing bodies set their own rules for public comment. {src: [City of Springfield summary of OGEC training](https://springfield-or.gov/wp-content/uploads/2026/01/Memo-Oregon-Public-Meeting-Law_Final.pdf); [Deschutes County guide to Public Meetings Law](https://www.deschutescounty.gov/DocumentCenter/View/4335/Reference-Guide---Public-Meetings-Law)}
 
 ## Where the public must be allowed in
 
@@ -24,13 +24,13 @@ status: draft
 | **Utilities and water** | Residents can comment in Oregon Public Utility Commission cases and on water right applications with the Oregon Water Resources Department, and vote in electric cooperative board elections. The 2025 POWER Act created a separate rate class so large data centers pay their own grid costs, but it covers only investor-owned utilities (Pacific Power, PGE, Idaho Power). Co-ops like Central Electric Cooperative answer to member-elected boards instead. {src: Who Governs Central Oregon; EDCO written submission, Oct 13} {verify: against PUC Data Center Advisory Committee summary, Jun 26, 2026} |
 | **Business tax incentives** | Enterprise zone agreements longer than three years need city and county resolutions adopted at public meetings. The company must file before breaking ground, and denials can be appealed to the Oregon Tax Court. The Strategic Investment Program is a 15-year tax break with an annual community service fee paid to local taxing districts. {src: CC Mtg 4 Pt 1, Oct 14, Kelsey Haskett in chat} |
 
-**Don’t forget the simplest options.** Anyone can call or email an elected official, or talk to one at the grocery store. People can also work through organizations and advocacy groups that follow an issue.
+**Don’t forget the simplest options.** Anyone can call or email an elected official, or talk to one at the grocery store.
 
-{gap: Taha’s original research and Patti’s list of commissions and public bodies, to fill out this table.}
+{gap: Patti’s list of commissions and public bodies.}
 
 ## Limits on the floor
 
-**Land use timing.** How much residents can affect a project depends on when they get involved. {src: Who Governs Central Oregon; Research Doc} {verify: legal specifics}
+**Land use timing.** How much residents can affect a project depends on when they get involved. {src: Who Governs Central Oregon; Research Doc}
 
 | Stage | What is happening | What residents can still change |
 | --- | --- | --- |
