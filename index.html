@@ -109,6 +109,16 @@ img { max-width: 100%; height: auto; }
 .crumb { margin: 0 0 8px; font-size: 0.92rem; font-weight: 700; color: var(--muted); }
 .crumb a { color: var(--muted); text-decoration: none; }
 .crumb a:hover { color: var(--blue); }
+.star { position: relative; display: inline-block; margin-left: 0.3em; color: var(--orange-bright); font-size: 0.95em; line-height: 1; cursor: help; }
+h1 .star { font-size: 0.7em; vertical-align: 0.12em; }
+.star::after {
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%);
+  padding: 4px 8px; border-radius: 6px; background: var(--ink); color: #FFFFFF;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0; line-height: 1.3; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.12s; z-index: 5;
+}
+.star:hover::after, .star:focus-visible::after { opacity: 1; }
+h1 .star::after { font-size: 0.8rem; }
 h1 { margin: 0; font-weight: 800; font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.35rem); line-height: 1.18; letter-spacing: -0.015em; color: var(--blue); }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 14px 0 0; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 11px; border-radius: 999px; font-size: 0.8rem; font-weight: 800; line-height: 1.6; }
@@ -1432,10 +1442,6 @@ tbody td:first-child { font-weight: 700; }
 <li><strong>Heavy reliance on one champion.</strong> Commissioners worried openly about what would happen when Hofer left. He stepped down in 2025, around the same time the Council overrode the Commission on the Flock contract.</li>
 </ul>
 </article>
-<article data-page="policy-options" data-status="soon" hidden>
-<h1>Example policies</h1>
-<div class="soon-card"><p class="soon-title">Coming soon</p><p>This page will offer a few examples of what effective policy might look like, possibly adapted from the Utah briefing book and framed as before, during, and after a decision. They’re meant to spark ideas, not to limit delegates’ thinking.</p></div>
-</article>
 <article data-page="engagement-details" data-status="draft" hidden>
 <h1>More on public engagement</h1>
 <section class="keypoints" aria-label="Key points"><h2>Key points</h2><ul>
@@ -1793,7 +1799,7 @@ tbody td:first-child { font-weight: 700; }
 
 <script>
 (function () {
-  var SECTIONS = [{"num":1,"title":"Introduction & overview","single":true,"pages":[["introduction","Introduction & overview"]]},{"num":2,"title":"AI-related decisions in Central Oregon","pages":[["what-is-ai","What we mean by “AI”"],["range-of-decisions","AI decisions in Central Oregon"],["government-use","Government use",1],["planning-permissions","Planning & permissions",1],["regulations","Regulations",1],["what-makes-ai-different","What makes AI decisions different"],["case-studies","Case studies"],["case-bend-la-pine","Bend-La Pine AI policy",1],["case-data-centers","Prineville vs. La Pine",1]]},{"num":3,"title":"Public engagement","pages":[["goal-of-engagement","Why “public engagement”?"],["who-is-involved","Who gets involved"],["when-to-get-involved","How and when to get involved"],["before-a-decision","Before a decision",1],["during-a-decision","During a decision",1],["after-a-decision","After a decision",1]]},{"num":4,"title":"Questions & Case Studies","pages":[["tradeoffs","Tradeoffs to weigh"],["lessons-from-elsewhere","Lessons from other places"],["case-loudoun","Loudoun County, Virginia",1],["case-hanford","Hanford Advisory Board",1],["case-oakland","Oakland Privacy Commission",1],["policy-options","Example policies"]]},{"num":5,"title":"Appendix","pages":[["engagement-details","More on public engagement"],["layers-of-government","Layers of government"],["participation-models","Models of participation"],["ai-details","More on AI decisions"],["where-ai-shows-up","Where AI shows up locally"],["infrastructure","Infrastructure behind AI"],["why-now","Why AI is relevant now"],["case-license-plate-cameras","Bend’s license plate cameras"]]}];
+  var SECTIONS = [{"num":1,"title":"Introduction & overview","single":true,"pages":[{"id":"introduction","nav":"Introduction & overview"}]},{"num":2,"title":"AI-related decisions in Central Oregon","pages":[{"id":"what-is-ai","nav":"What we mean by “AI”"},{"id":"range-of-decisions","nav":"AI decisions in Central Oregon","star":true},{"id":"government-use","nav":"Government use","sub":true},{"id":"planning-permissions","nav":"Planning & permissions","sub":true},{"id":"regulations","nav":"Regulations","sub":true},{"id":"what-makes-ai-different","nav":"What makes AI decisions different","star":true},{"id":"case-studies","nav":"Case studies"},{"id":"case-bend-la-pine","nav":"Bend-La Pine AI policy","sub":true},{"id":"case-data-centers","nav":"Prineville vs. La Pine","sub":true}]},{"num":3,"title":"Public engagement","pages":[{"id":"goal-of-engagement","nav":"Why “public engagement”?"},{"id":"who-is-involved","nav":"Who gets involved"},{"id":"when-to-get-involved","nav":"How and when to get involved","star":true},{"id":"before-a-decision","nav":"Before a decision","sub":true},{"id":"during-a-decision","nav":"During a decision","sub":true},{"id":"after-a-decision","nav":"After a decision","sub":true}]},{"num":4,"title":"Questions & Case Studies","pages":[{"id":"tradeoffs","nav":"Tradeoffs to weigh","star":true},{"id":"lessons-from-elsewhere","nav":"Lessons from other places"},{"id":"case-loudoun","nav":"Loudoun County, Virginia","sub":true},{"id":"case-hanford","nav":"Hanford Advisory Board","sub":true},{"id":"case-oakland","nav":"Oakland Privacy Commission","sub":true}]},{"num":5,"title":"Appendix","pages":[{"id":"engagement-details","nav":"More on public engagement"},{"id":"layers-of-government","nav":"Layers of government"},{"id":"participation-models","nav":"Models of participation"},{"id":"ai-details","nav":"More on AI decisions"},{"id":"where-ai-shows-up","nav":"Where AI shows up locally"},{"id":"infrastructure","nav":"Infrastructure behind AI"},{"id":"why-now","nav":"Why AI is relevant now"},{"id":"case-license-plate-cameras","nav":"Bend’s license plate cameras"}]}];
   var articles = {};
   document.querySelectorAll("article[data-page]").forEach(function (a) { articles[a.dataset.page] = a; });
 
@@ -1803,11 +1809,13 @@ tbody td:first-child { font-weight: 700; }
     return (c.textContent || "").trim().split(/\s+/).length;
   }
 
+  var STAR = '<span class="star" role="img" aria-label="Important topic" data-tip="Important topic">\u2605</span>';
+  var STAR_FOCUSABLE = STAR.replace('<span ', '<span tabindex="0" ');
   var ORDER = [];
   SECTIONS.forEach(function (s) {
     s.pages = s.pages.map(function (a) {
-      var art = articles[a[0]];
-      var p = { id: a[0], nav: a[1], sub: !!a[2], section: s };
+      var art = articles[a.id];
+      var p = { id: a.id, nav: a.nav, sub: !!a.sub, star: !!a.star, section: s };
       p.status = art.dataset.status === "draft" ? "draft" : "soon";
       p.title = art.querySelector("h1").textContent.trim();
       p.minutes = p.status === "draft" ? Math.max(1, Math.round(words(art) / 220)) : null;
@@ -1859,7 +1867,7 @@ tbody td:first-child { font-weight: 700; }
     s.pages.forEach(function (p) {
       var li = el("li", p.sub ? { class: "sub" } : null);
       li.appendChild(el("div", { class: "outline-row" },
-        '<a href="#' + p.id + '">' + esc(p.title) + "</a>" +
+        '<a href="#' + p.id + '">' + esc(p.title) + (p.star ? STAR : "") + "</a>" +
         (p.status === "draft" ? "" : '<span class="pill soon">Coming soon</span>') +
         '<span class="time">' + (p.minutes ? p.minutes + " min read" : "—") + "</span>"));
       ul.appendChild(li);
@@ -1872,6 +1880,7 @@ tbody td:first-child { font-weight: 700; }
   ORDER.forEach(function (p, i) {
     var art = articles[p.id];
     var h1 = art.querySelector("h1");
+    if (p.star) h1.insertAdjacentHTML("beforeend", STAR_FOCUSABLE);
     if (!p.section.single) {
       art.insertBefore(el("p", { class: "crumb" }, '<a href="#' + p.section.pages[0].id + '">' + esc(p.section.title) + "</a>"), h1);
     }

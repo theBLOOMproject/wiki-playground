@@ -271,7 +271,7 @@ export function build() {
         if (!p.id || !p.nav) fail(`content/site.yml: every page needs an id and a nav label (section "${s.title}")`);
         if (seen.has(p.id)) fail(`content/site.yml: page "${p.id}" is listed twice`);
         seen.add(p.id);
-        return p.sub ? [p.id, p.nav, 1] : [p.id, p.nav];
+        return { id: p.id, nav: p.nav, ...(p.sub ? { sub: true } : {}), ...(p.star ? { star: true } : {}) };
       }),
     };
   });
@@ -281,7 +281,7 @@ export function build() {
   const stray = onDisk.filter((id) => !seen.has(id));
   if (stray.length) fail(`These pages aren't listed in content/site.yml: ${stray.map((id) => `content/pages/${id}.md`).join(", ")}`);
 
-  const ordered = SECTIONS.flatMap((s) => s.pages.map((p) => loadPage(p[0])));
+  const ordered = SECTIONS.flatMap((s) => s.pages.map((p) => loadPage(p.id)));
   const firstDraft = ordered.find((p) => (p.data.status || "draft") === "draft") || ordered[0];
   const articles = [
     renderHome(loadPage("home"), firstDraft.id, site.ask_url),

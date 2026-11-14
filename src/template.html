@@ -109,6 +109,16 @@ img { max-width: 100%; height: auto; }
 .crumb { margin: 0 0 8px; font-size: 0.92rem; font-weight: 700; color: var(--muted); }
 .crumb a { color: var(--muted); text-decoration: none; }
 .crumb a:hover { color: var(--blue); }
+.star { position: relative; display: inline-block; margin-left: 0.3em; color: var(--orange-bright); font-size: 0.95em; line-height: 1; cursor: help; }
+h1 .star { font-size: 0.7em; vertical-align: 0.12em; }
+.star::after {
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%);
+  padding: 4px 8px; border-radius: 6px; background: var(--ink); color: #FFFFFF;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0; line-height: 1.3; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.12s; z-index: 5;
+}
+.star:hover::after, .star:focus-visible::after { opacity: 1; }
+h1 .star::after { font-size: 0.8rem; }
 h1 { margin: 0; font-weight: 800; font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.35rem); line-height: 1.18; letter-spacing: -0.015em; color: var(--blue); }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 14px 0 0; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 11px; border-radius: 999px; font-size: 0.8rem; font-weight: 800; line-height: 1.6; }
@@ -425,11 +435,13 @@ tbody td:first-child { font-weight: 700; }
     return (c.textContent || "").trim().split(/\s+/).length;
   }
 
+  var STAR = '<span class="star" role="img" aria-label="Important topic" data-tip="Important topic">\u2605</span>';
+  var STAR_FOCUSABLE = STAR.replace('<span ', '<span tabindex="0" ');
   var ORDER = [];
   SECTIONS.forEach(function (s) {
     s.pages = s.pages.map(function (a) {
-      var art = articles[a[0]];
-      var p = { id: a[0], nav: a[1], sub: !!a[2], section: s };
+      var art = articles[a.id];
+      var p = { id: a.id, nav: a.nav, sub: !!a.sub, star: !!a.star, section: s };
       p.status = art.dataset.status === "draft" ? "draft" : "soon";
       p.title = art.querySelector("h1").textContent.trim();
       p.minutes = p.status === "draft" ? Math.max(1, Math.round(words(art) / 220)) : null;
@@ -481,7 +493,7 @@ tbody td:first-child { font-weight: 700; }
     s.pages.forEach(function (p) {
       var li = el("li", p.sub ? { class: "sub" } : null);
       li.appendChild(el("div", { class: "outline-row" },
-        '<a href="#' + p.id + '">' + esc(p.title) + "</a>" +
+        '<a href="#' + p.id + '">' + esc(p.title) + (p.star ? STAR : "") + "</a>" +
         (p.status === "draft" ? "" : '<span class="pill soon">Coming soon</span>') +
         '<span class="time">' + (p.minutes ? p.minutes + " min read" : "—") + "</span>"));
       ul.appendChild(li);
@@ -494,6 +506,7 @@ tbody td:first-child { font-weight: 700; }
   ORDER.forEach(function (p, i) {
     var art = articles[p.id];
     var h1 = art.querySelector("h1");
+    if (p.star) h1.insertAdjacentHTML("beforeend", STAR_FOCUSABLE);
     if (!p.section.single) {
       art.insertBefore(el("p", { class: "crumb" }, '<a href="#' + p.section.pages[0].id + '">' + esc(p.section.title) + "</a>"), h1);
     }

@@ -26,6 +26,8 @@ If something in a page is wrong, the build stops and tells you which file to fix
 
 **To add a page:** create `content/pages/my-page.md`, then add `- id: my-page` with a `nav:` label to the right section in `content/site.yml`.
 
+**To mark a key page:** add `star: true` under it in `content/site.yml`. It gets an orange star, with an "Important topic" tooltip, in the home page outline and next to the page title. In the page script, each page object has a `star` flag, so other parts of the site can use it too.
+
 ## Writing a page
 
 Every page starts with a short header:

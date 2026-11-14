@@ -1,6 +1,7 @@
 # Site structure: sections and page order for the sidebar, home outline, and next/previous links.
 # Each page id must match a file in content/pages/<id>.md.
 # nav = the short label shown in the sidebar.  sub: true = indented under the page above it.
+# star: true = a key page, marked with a star in the home page outline.
 # single: true = the section has just one page and no sub-list in the sidebar.
 
 # Link for the "Ask a question" buttons (sidebar and home page).
@@ -19,6 +20,7 @@ sections:
         nav: "What we mean by “AI”"
       - id: range-of-decisions
         nav: "AI decisions in Central Oregon"
+        star: true
       - id: government-use
         nav: "Government use"
         sub: true
@@ -30,6 +32,7 @@ sections:
         sub: true
       - id: what-makes-ai-different
         nav: "What makes AI decisions different"
+        star: true
       - id: case-studies
         nav: "Case studies"
       - id: case-bend-la-pine
@@ -47,6 +50,7 @@ sections:
         nav: "Who gets involved"
       - id: when-to-get-involved
         nav: "How and when to get involved"
+        star: true
       - id: before-a-decision
         nav: "Before a decision"
         sub: true
@@ -61,6 +65,7 @@ sections:
     pages:
       - id: tradeoffs
         nav: "Tradeoffs to weigh"
+        star: true
       - id: lessons-from-elsewhere
         nav: "Lessons from other places"
       - id: case-loudoun
@@ -72,8 +77,6 @@ sections:
       - id: case-oakland
         nav: "Oakland Privacy Commission"
         sub: true
-      - id: policy-options
-        nav: "Example policies"
 
   - title: "Appendix"
     pages:
