@@ -4,20 +4,10 @@ status: draft
 ---
 
 ::: keypoints
-- AI depends on a physical system: internet connections, specialized chips, data centers, and electricity.
 - Data centers store data, run everyday apps, and, newest of all, train AI models.
 - One prompt uses little power. The local impact comes from the data center itself, which can use as much electricity as tens of thousands of homes.
 - Data centers used about 23% of Oregon’s retail electricity sales in 2025, and information on their water use is often incomplete.
 :::
-
-AI is more than just the apps on our phones and computers. To make applications like Claude and ChatGPT possible, it requires a large physical system behind the scenes.
-
-| Piece | What it is | Why it matters locally |
-| --- | --- | --- |
-| **Internet** | The fiber-optic cables and networks that carry your request to a data center and bring the answer back | Fast, reliable connections are one reason companies choose a location |
-| **Chips** | Specialized computer chips are like the “brains” of AI. A single chip can perform trillions of calculations per second | Making chips takes factories, water, and minerals. Oregon has a large chip industry (see below) |
-| **Data centers** | Buildings full of computers (with chips) that process requests and send answers back to users | They need land, water for cooling, and huge amounts of electricity |
-| **Power** | The electricity that runs and cools the computers | Data centers tend to consume a lot of electricity, which can affect the grid and power bills |
 
 ## What do data centers do?
 

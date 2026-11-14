@@ -7,6 +7,7 @@ status: draft
 - AI is a broad term for computer systems that can perform tasks with human-like intelligence, like understanding language or recognizing images.
 - Unlike traditional software, modern AI systems “learn” patterns from data, and in some cases can complete tasks with minimal human supervision.
 - Most AI tools run on models built by a handful of large labs and companies. Most people use them through apps, not directly.
+- AI depends on a physical system: internet connections, specialized chips, data centers, and electricity.
 - Data centers store data, run everyday apps, and, newest of all, train AI models.
 :::
 
@@ -37,6 +38,15 @@ Most of today’s AI tools run on **models**. A model is essentially just very c
 :::
 
 ## What infrastructure does it take?
+
+AI is more than just the apps on our phones and computers. To make applications like Claude and ChatGPT possible, it requires a large physical system behind the scenes.
+
+| Piece | What it is | Why it matters locally |
+| --- | --- | --- |
+| **Internet** | The fiber-optic cables and networks that carry your request to a data center and bring the answer back | Fast, reliable connections are one reason companies choose a location |
+| **Chips** | Specialized computer chips are like the “brains” of AI. A single chip can perform trillions of calculations per second | Making chips takes factories, water, and minerals. Oregon has a large chip industry (see [the supply chain in Oregon](#infrastructure)) |
+| **Data centers** | Buildings full of computers (with chips) that process requests and send answers back to users | They need land, water for cooling, and huge amounts of electricity |
+| **Power** | The electricity that runs and cools the computers | Data centers tend to consume a lot of electricity, which can affect the grid and power bills |
 
 Data centers are not new; they have been the backbone of the internet for decades. They do three main jobs:
 

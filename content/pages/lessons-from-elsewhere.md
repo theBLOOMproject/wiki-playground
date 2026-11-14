@@ -27,5 +27,3 @@ Each short case study covers:
 - [**San Jose’s participatory algorithmic auditing**](https://datasociety.net/research-library/the-uses-and-limits-of-algorithmic-impact-assessments/): residents took part in evaluating a city algorithmic system, using a value-sensitive design approach.
 - [**Offshore wind energy stakeholder engagement in Oregon**](https://www.oregon.gov/lcd/ocmp/pages/offshore-wind-roadmap.aspx): a possible Oregon example of strong stakeholder consultation. The agency published [responses to each public comment](https://www.oregon.gov/lcd/OCMP/Documents/OSW-Roadmap_PublicCmntResp.pdf).
 - [**Oregon’s health services prioritization**](https://www.oregon.gov/oha/HPA/DSI-HERC/Documents/Brief-History-Health-Services-Prioritization-Oregon.pdf): in-depth citizen engagement across the state.
-- **Spotted owl engagement**
-- **Arcata’s economic development strategy engagement**

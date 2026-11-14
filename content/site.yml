@@ -10,24 +10,6 @@ sections:
       - id: introduction
         nav: "Introduction & overview"
 
-  - title: "Public engagement"
-    pages:
-      - id: goal-of-engagement
-        nav: "Why “public engagement”?"
-      - id: who-is-involved
-        nav: "Who gets involved"
-      - id: when-to-get-involved
-        nav: "How and when to get involved"
-      - id: before-a-decision
-        nav: "Before a decision"
-        sub: true
-      - id: during-a-decision
-        nav: "During a decision"
-        sub: true
-      - id: after-a-decision
-        nav: "After a decision"
-        sub: true
-
   - title: "AI-related decisions in Central Oregon"
     pages:
       - id: what-is-ai
@@ -54,7 +36,25 @@ sections:
         nav: "Prineville vs. La Pine"
         sub: true
 
-  - title: "Developing recommendations"
+  - title: "Public engagement"
+    pages:
+      - id: goal-of-engagement
+        nav: "Why “public engagement”?"
+      - id: who-is-involved
+        nav: "Who gets involved"
+      - id: when-to-get-involved
+        nav: "How and when to get involved"
+      - id: before-a-decision
+        nav: "Before a decision"
+        sub: true
+      - id: during-a-decision
+        nav: "During a decision"
+        sub: true
+      - id: after-a-decision
+        nav: "After a decision"
+        sub: true
+
+  - title: "Questions & Case Studies"
     pages:
       - id: tradeoffs
         nav: "Tradeoffs to weigh"

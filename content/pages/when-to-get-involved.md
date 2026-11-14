@@ -12,12 +12,6 @@ status: draft
 
 Engagement can happen before the government makes a decision, while it is being made, and after it takes effect. At each stage, there are important opportunities for residents, corporations, and others outside the government to shape the decisions to meet their interests.
 
-::: figure
-{{> phases}}
-
-The three stages of public engagement. Each one has its own page in this section.
-:::
-
 ::: wide
 | Stage | Why | Common examples |
 | --- | --- | --- |
