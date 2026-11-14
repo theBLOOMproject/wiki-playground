@@ -3,6 +3,9 @@
 # nav = the short label shown in the sidebar.  sub: true = indented under the page above it.
 # single: true = the section has just one page and no sub-list in the sidebar.
 
+# Link for the "Ask a question" buttons (sidebar and home page).
+ask_url: "https://docs.google.com/forms/d/e/1FAIpQLSeccalq6FQQrRKFha2XeWcYJPI8tSGsH-N0KnmmRtyE9NT75A/viewform?usp=dialog"
+
 sections:
   - title: "Introduction & overview"
     single: true

@@ -224,7 +224,7 @@ function renderBody(page) {
   }
 }
 
-function renderHome(page, firstDraftId) {
+function renderHome(page, firstDraftId, askUrl) {
   const $ = cheerio.load(renderBody(page), null, false);
   const note = $('div[data-c="home-note"]');
   const noteHtml = note.length ? note.html().trim() : "";
@@ -236,6 +236,7 @@ function renderHome(page, firstDraftId) {
   ${$.html().trim()}
   <div class="home-actions">
     <a class="btn" href="#${firstDraftId}">Start reading <span aria-hidden="true">→</span></a>
+    ${askUrl ? `<a class="btn btn-ask" href="${esc(askUrl)}"><svg width="17" height="17" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.2" fill="currentColor"/><path d="M6.2 6.2a1.9 1.9 0 0 1 3.7.5c0 1.3-1.9 1.6-1.9 2.8" fill="none" style="stroke: var(--ask-q)" stroke-width="1.7" stroke-linecap="round"/><circle cx="8" cy="11.7" r="1" style="fill: var(--ask-q)"/></svg>Ask a question</a>` : ""}
   </div>
   <div class="outline" id="outline"></div>
   ${noteHtml ? `<div class="home-note">${noteHtml}</div>` : ""}
@@ -283,7 +284,7 @@ export function build() {
   const ordered = SECTIONS.flatMap((s) => s.pages.map((p) => loadPage(p[0])));
   const firstDraft = ordered.find((p) => (p.data.status || "draft") === "draft") || ordered[0];
   const articles = [
-    renderHome(loadPage("home"), firstDraft.id),
+    renderHome(loadPage("home"), firstDraft.id, site.ask_url),
     ...ordered.map(renderArticle),
     ...unlisted.map((id) => renderArticle(loadPage(id))),
   ];
@@ -294,7 +295,8 @@ export function build() {
   }
   const out = template
     .replace("<!-- ARTICLES -->", () => articles.join("\n"))
-    .replace("/* SECTIONS */[]", () => JSON.stringify(SECTIONS));
+    .replace("/* SECTIONS */[]", () => JSON.stringify(SECTIONS))
+    .replaceAll("{{ASK_URL}}", () => esc(site.ask_url || "#"));
   fs.writeFileSync(OUT, out);
   return { pages: articles.length, bytes: out.length };
 }

@@ -225,6 +225,16 @@ tbody th { font-weight: 800; color: var(--ink); white-space: nowrap; }
 .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin: 28px 0 0; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px; background: var(--blue); color: var(--bg); font-weight: 800; text-decoration: none; }
 .btn:hover { background: var(--blue-strong); }
+.btn-ask { background: var(--blue-soft); color: var(--blue); --ask-q: var(--blue-soft); }
+.btn-ask:hover { background: #CCDDF2; --ask-q: #CCDDF2; }
+.ask-link {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 18px;
+  padding: 9px 12px; border-radius: 10px; background: var(--blue); color: #FFFFFF; --ask-q: var(--blue);
+  text-decoration: none; font-weight: 700; font-size: 0.95rem; line-height: 1.35;
+}
+.ask-link:hover { background: var(--blue-strong); --ask-q: var(--blue-strong); }
+.side-rule { border: 0; border-top: 1px solid var(--line); margin: 0 0 18px; }
+.ask-icon { flex: none; width: 24px; height: 24px; display: inline-grid; place-items: center; }
 .outline { margin-top: 48px; }
 .outline-section { margin-bottom: 30px; }
 .outline-head { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; font-size: 1.15rem; }
@@ -391,6 +401,8 @@ tbody td:first-child { font-weight: 700; }
       <span class="brand-title">Learning Center</span>
       <span class="brand-sub">Central Oregon Civic Assembly on AI</span>
     </a>
+    <a class="ask-link" href="{{ASK_URL}}"><span class="ask-icon"><svg width="17" height="17" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.2" fill="currentColor"/><path d="M6.2 6.2a1.9 1.9 0 0 1 3.7.5c0 1.3-1.9 1.6-1.9 2.8" fill="none" style="stroke: var(--ask-q)" stroke-width="1.7" stroke-linecap="round"/><circle cx="8" cy="11.7" r="1" style="fill: var(--ask-q)"/></svg></span>Ask a question</a>
+    <hr class="side-rule">
     <nav aria-label="Learning Center pages"><ul class="nav" id="nav"></ul></nav>
   </aside>
 
