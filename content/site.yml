@@ -39,7 +39,7 @@ sections:
         nav: "Bend-La Pine AI policy"
         sub: true
       - id: case-data-centers
-        nav: "Prineville vs. La Pine"
+        nav: "Prineville & La Pine"
         sub: true
 
   - title: "Public engagement"

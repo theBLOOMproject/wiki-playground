@@ -1,5 +1,5 @@
 ---
-title: "Case study: Data centers in Prineville vs. La Pine"
+title: "Case study: Data centers in Prineville & La Pine"
 status: draft
 ---
 

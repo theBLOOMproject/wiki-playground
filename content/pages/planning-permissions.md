@@ -26,7 +26,7 @@ Where the public could have a say
 : Comments on general plans, co-design opportunities, and input on community benefit agreements or how revenue is spent
 
 Case study
-: [Data centers in Prineville vs. La Pine](#case-data-centers)
+: [Data centers in Prineville & La Pine](#case-data-centers)
 
 In the local context, this is most relevant to data centers and other physical AI investments. The goal of these decisions is to figure out *whether, where, and on what terms* a community wants new development.
 
