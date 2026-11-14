@@ -13,36 +13,27 @@ sections:
   - title: "Public engagement"
     pages:
       - id: goal-of-engagement
-        nav: "The goal of public engagement"
+        nav: "Why “public engagement”?"
       - id: who-is-involved
-        nav: "Who is involved"
-      - id: layers-of-government
-        nav: "Layers of government"
+        nav: "Who gets involved"
       - id: when-to-get-involved
         nav: "How and when to get involved"
       - id: before-a-decision
         nav: "Before a decision"
+        sub: true
       - id: during-a-decision
         nav: "During a decision"
+        sub: true
       - id: after-a-decision
         nav: "After a decision"
-      - id: the-floor
-        nav: "The floor: what the law requires"
-      - id: the-ceiling
-        nav: "The ceiling: what’s possible"
+        sub: true
 
   - title: "AI-related decisions in Central Oregon"
     pages:
       - id: what-is-ai
         nav: "What we mean by “AI”"
-      - id: where-ai-shows-up
-        nav: "Where AI shows up locally"
-      - id: infrastructure
-        nav: "Infrastructure behind AI"
-      - id: why-now
-        nav: "Why AI is relevant now"
       - id: range-of-decisions
-        nav: "How AI decisions are made"
+        nav: "AI decisions in Central Oregon"
       - id: government-use
         nav: "Government use"
         sub: true
@@ -62,18 +53,6 @@ sections:
       - id: case-data-centers
         nav: "Prineville vs. La Pine"
         sub: true
-      - id: case-license-plate-cameras
-        nav: "Bend’s license plate cameras"
-        sub: true
-
-  - title: "Defining the problem"
-    pages:
-      - id: structural-gaps
-        nav: "Gaps in public input"
-      - id: supporting-engagement
-        nav: "What would help"
-      - id: questions-for-delegates
-        nav: "Questions for delegates"
 
   - title: "Developing recommendations"
     pages:
@@ -93,6 +72,21 @@ sections:
       - id: policy-options
         nav: "Example policies"
 
-# Pages that exist but aren't in the sidebar list or reading order.
-unlisted:
-  - review-notes
+  - title: "Appendix"
+    pages:
+      - id: engagement-details
+        nav: "More on public engagement"
+      - id: layers-of-government
+        nav: "Layers of government"
+      - id: participation-models
+        nav: "Models of participation"
+      - id: ai-details
+        nav: "More on AI decisions"
+      - id: where-ai-shows-up
+        nav: "Where AI shows up locally"
+      - id: infrastructure
+        nav: "Infrastructure behind AI"
+      - id: why-now
+        nav: "Why AI is relevant now"
+      - id: case-license-plate-cameras
+        nav: "Bend’s license plate cameras"

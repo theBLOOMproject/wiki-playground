@@ -10,7 +10,22 @@ status: draft
 - AI use policies come from the state, school districts, and city managers, often with little public input.
 :::
 
-As described in [where AI is showing up](#where-ai-shows-up), government agencies are already using AI tools, mostly to help staff work faster. The rationale for the public sector to use these systems is similar to the private sector: increase efficiency and speed of transactions and lower the costs (Hodjick 2022). {check: This citation may be Hickok (2022), “Public procurement of artificial intelligence systems: new risks and future proofing,” *AI & Society*. Confirm author and add a link.}
+Who’s involved
+: The city manager, school boards, and other city staff
+
+What rules are already in place
+: Public invitations to bid and requests for solicitation
+
+Potential impacts and tradeoffs
+: Faster, greater public service capacity must be balanced against privacy and accuracy concerns
+
+Where the public could have a say
+: Shaping procurement goals, taking part in evaluations, and giving feedback on technology impacts
+
+Case study
+: [Bend-La Pine School District’s AI use policy](#case-bend-la-pine)
+
+Government agencies are already using AI tools, mostly to help staff work faster. The rationale for the public sector to use these systems is similar to the private sector: increase efficiency and speed of transactions and lower the costs (Hodjick 2022).
 
 **Procurement** is the process the government uses to buy goods and services. Larger purchases are usually defined through a **Request for Qualifications (RFQ)** or similar request, which describes what the government needs; these documents are usually available online, before vendors apply and are selected. Final purchasing decisions are settled through a **contract** with the company providing the services.
 
@@ -22,7 +37,7 @@ Here are some examples:
 | Flock Safety license plate cameras | Bend Police Department | Bought with grant funds; contract not renewed after public pushback |
 | MagicSchool AI | Bend-La Pine Schools | Procurement guided by state (ODE) guidelines |
 
-**Throughout these processes, transparency is generally required to preserve trust and accountability with the public.** Secrecy in public contracting can lead to waste, corruption, and loss of public trust ([OGP, The Costs of Secrecy](https://www.opengovpartnership.org/wp-content/uploads/2018/05/OGP_Costs-of-Secrecy_20180515.pdf)). Bid documents are typically posted for the public on portals like [oregonbids.com](http://oregonbids.com) (see the [City of Bend example](https://www.oregonbids.com/government-agencies/deschutes/bend-city-of-41286/)). **Small purchases may skip public review entirely,** as staff can buy things under their own purchasing authority (this was the case with the Flock cameras). Some experts argue procurement rules should require more from AI companies, such as details of data qualities, model decisions, optimization techniques and processes when required by the public entity. {check: Needs a citation; likely the same Hickok (2022) article.}
+**Throughout these processes, transparency is generally required to preserve trust and accountability with the public.** Secrecy in public contracting can lead to waste, corruption, and loss of public trust ([OGP, The Costs of Secrecy](https://www.opengovpartnership.org/wp-content/uploads/2018/05/OGP_Costs-of-Secrecy_20180515.pdf)). Bid documents are typically posted for the public on portals like [oregonbids.com](http://oregonbids.com) (see the [City of Bend example](https://www.oregonbids.com/government-agencies/deschutes/bend-city-of-41286/)). **Small purchases may skip public review entirely,** as staff can buy things under their own purchasing authority (this was the case with the Flock cameras). Some experts argue procurement rules should require more from AI companies, such as details of data qualities, model decisions, optimization techniques and processes when required by the public entity.
 
 **Opportunities for public feedback during these processes** (e.g., public comment, voting, and other public input) are generally uncommon, for some good reasons:
 
@@ -38,4 +53,4 @@ On the other hand, governments can create **oversight bodies** to watch over cer
 
 - **In education,** many guidelines come down from higher levels of government. For example, the Oregon Department of Education created thorough guidelines for districts ([ODE](https://www.oregon.gov/ode/educator-resources/teachingcontent/pages/generative-artificial-intelligence-%28ai%29-for-k-12-schools.aspx)). Districts then write their own policies (see the [Bend-La Pine case study](#case-bend-la-pine)).
 - **In state government,** agencies follow a statewide Responsible AI Usage Policy and an AI risk management framework. Public-facing AI tools must post a disclosure card ([State uses, from Amy Paul](https://drive.google.com/file/d/1va1NYHXVXybVj7PxIA7K6IRd_El7Lhiz/view?usp=drive_link)).
-- **In local government,** policies like Bend’s are usually set by the city manager as administrative rules. The Bulletin’s editorial board said the public had no chance to weigh in on Bend’s policy ([Central Oregon Decisions tracker](https://docs.google.com/spreadsheets/d/19zmUMXSqIPJhdJZTfiAFqM_DHhTYhB1pbOovrmJVmks/edit?gid=1770817539#gid=1770817539)). {check: Find and link the Bulletin editorial.}
+- **In local government,** policies like Bend’s are usually set by the city manager as administrative rules. The Bulletin’s editorial board said the public had no chance to weigh in on Bend’s policy ([Central Oregon Decisions tracker](https://docs.google.com/spreadsheets/d/19zmUMXSqIPJhdJZTfiAFqM_DHhTYhB1pbOovrmJVmks/edit?gid=1770817539#gid=1770817539)).

@@ -10,7 +10,7 @@ status: draft
 - Both decisions were made by city councils, but the public’s role was very different.
 :::
 
-Neither of these cases involves a large “AI data center” of the newest kind; Prineville’s existing data centers were built mostly for cloud computing, and La Pine’s proposal was mainly for cryptocurrency mining. However, they are good examples of how communities make decisions about data centers, and they show two very different outcomes. {team: Content committee advice: present Prineville in small pieces tied to what delegates must decide, so it informs without becoming advocacy. A useful question to pose: *“If not data centers, what?”* Also note that data centers don’t explain all of Crook County’s changes {src: Mtg 2 team debrief, internal}.}
+Neither of these cases involves a large “AI data center” of the newest kind; Prineville’s existing data centers were built mostly for cloud computing, and La Pine’s proposal was mainly for cryptocurrency mining. However, they are good examples of how communities make decisions about data centers, and they show two very different outcomes.
 
 ## Prineville
 
@@ -29,12 +29,12 @@ Competing views
 What happened afterward
 : Tax breaks begin expiring in 2027. The city now says it wants more from future deals
 
-In the city’s own words, Prineville was “dying on the vine” following the housing crash and didn’t have other options knocking on its door ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)). When Meta first approached the city, the city pursued a number of economic arrangements to make sure the data centers would benefit the community, including franchise fees on electricity (about $1 million per month today) and company-funded water storage and wastewater projects ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)). {check: EDCO and the Mtg 4 minutes give different job and franchise fee figures (350+ vs. 450+ jobs; about $430,000 vs. $400,000 in 2011 franchise fees). Use EDCO’s sourced figures with attribution.}
+In the city’s own words, Prineville was “dying on the vine” following the housing crash and didn’t have other options knocking on its door ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)). When Meta first approached the city, the city pursued a number of economic arrangements to make sure the data centers would benefit the community, including franchise fees on electricity (about $1 million per month today) and company-funded water storage and wastewater projects ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)).
 
 **Timeline:**
 
 ::: timeline
-1. **2002** An Economic Opportunities Assessment laid out several options for industrial development. {check: Confirm the year and document.}
+1. **2002** An Economic Opportunities Assessment laid out several options for industrial development.
 2. **2008 to 2010** The housing crisis and Great Recession brought the city to its knees. The timber industry was dying, and county unemployment approached 20% ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)).
 3. **Late 2009 to 2010** A then-secret “well-funded, well-known company” negotiated to build in Prineville’s enterprise zone ([Data Center Knowledge](https://datacenterknowledge.com/business/company-x-plans-oregon-data-center)). Facebook finalized the deal and broke ground in 2010.
 4. **2011 onward** Facebook’s first data center opened in 2011. Apple followed. Both received 15-year property tax breaks through Oregon’s rural enterprise zone program. Each new building got its own deal ([Marketplace](https://www.marketplace.org/story/2026/10/21/apple-and-meta-data-centers-divide-oregon-towns-residents)).
@@ -60,7 +60,7 @@ The decision
 : Whether to sell about 20 acres in the La Pine Industrial Park to Boxminer.io for a 20-megawatt data center
 
 Who had authority
-: La Pine City Council. Because Deschutes County owns the land, the county commission would also have needed to approve the sale
+: La Pine City Council
 
 The public’s role
 : Public comment at council meetings; petitions
@@ -74,7 +74,7 @@ What happened afterward
 **Timeline of public engagement:**
 
 - **Before:** In March 2026, the La Pine City Council voted to start the process of selling the land and asked city staff to learn more about the proposal ([The Source](https://www.bendsource.com/news/localnews/la-pine-rejects-proposed-data-center-amid-public-outcry/)). The local economic development board recommended the project.
-- **During:** Nearly 100 residents showed up to a May 13 council meeting, even though the data center wasn’t on the agenda ([KTVZ](https://ktvz.com/news/2026/05/13/proposed-data-center-in-la-pine-creates-crowd-at-meeting/)). Many residents were upset they hadn’t been notified about the March vote ([The Source](https://www.bendsource.com/news/localnews/after-pushback-to-la-pine-data-center-community-developers-await-next-steps/)). {team: Unfinished in ORBB: “…and didn’t know about …”} The council heard nearly five hours of public comment that month, mostly against the project. Residents worried about the fragile rural power grid. The 20-megawatt facility would use about 15 times the electricity used by all the households in a city La Pine’s size ([OPB](https://www.opb.org/article/2026/05/28/la-pine-rejects-data-center-central-oregon/)). {new: } The developer promised “up to” 200 jobs, but the city manager’s report estimated it might be closer to five ([The Source](https://www.bendsource.com/news/localnews/la-pine-rejects-proposed-data-center-amid-public-outcry/)).
-- **After:** The council voted unanimously to reject the sale on May 27, 2026. “We do listen to you because we live here as well,” the council president told the crowd ([The Source](https://www.bendsource.com/news/localnews/la-pine-rejects-proposed-data-center-amid-public-outcry/)). Some reports describe a citizen ballot measure on future data center projects at the site for the November 2026 election. {check: This is unverified; confirm with the Deschutes County Clerk.}
-
-{team: ORBB: This is a good place for quotes and reflections from La Pine residents, public officials, etc.}
+- **During:** Nearly 100 residents showed up to a May 13 council meeting, even though the data center wasn’t on the agenda ([KTVZ](https://ktvz.com/news/2026/05/13/proposed-data-center-in-la-pine-creates-crowd-at-meeting/)). Many residents were upset they hadn’t been notified about the March vote ([The Source](https://www.bendsource.com/news/localnews/after-pushback-to-la-pine-data-center-community-developers-await-next-steps/)). The council heard nearly five hours of public comment that month, mostly against the project. Residents worried about the fragile rural power grid.
+  - The 20-megawatt facility would use about 15 times the electricity used by all the households in a city La Pine’s size ([OPB](https://www.opb.org/article/2026/05/28/la-pine-rejects-data-center-central-oregon/)).
+  - The developer promised “up to” 200 jobs, but the city manager’s report estimated it might be closer to five ([The Source](https://www.bendsource.com/news/localnews/la-pine-rejects-proposed-data-center-amid-public-outcry/)).
+- **After:** The council voted unanimously to reject the sale on May 27, 2026. “We do listen to you because we live here as well,” the council president told the crowd ([The Source](https://www.bendsource.com/news/localnews/la-pine-rejects-proposed-data-center-amid-public-outcry/)).

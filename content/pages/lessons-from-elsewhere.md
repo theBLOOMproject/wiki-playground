@@ -24,10 +24,8 @@ Each short case study covers:
 
 ## More examples being researched
 
-- [**San Jose’s participatory algorithmic auditing**](https://datasociety.net/research-library/the-uses-and-limits-of-algorithmic-impact-assessments/): residents took part in evaluating a city algorithmic system, using a value-sensitive design approach. {src: More in the [San Jose AIML case report](https://docs.google.com/document/d/1G-e8qa77jweXmHXFNlVM1mrXnq1V66It-CWvZV_Kek8/edit?tab=t.0)}
+- [**San Jose’s participatory algorithmic auditing**](https://datasociety.net/research-library/the-uses-and-limits-of-algorithmic-impact-assessments/): residents took part in evaluating a city algorithmic system, using a value-sensitive design approach.
 - [**Offshore wind energy stakeholder engagement in Oregon**](https://www.oregon.gov/lcd/ocmp/pages/offshore-wind-roadmap.aspx): a possible Oregon example of strong stakeholder consultation. The agency published [responses to each public comment](https://www.oregon.gov/lcd/OCMP/Documents/OSW-Roadmap_PublicCmntResp.pdf).
-- [**Oregon’s health services prioritization**](https://www.oregon.gov/oha/HPA/DSI-HERC/Documents/Brief-History-Health-Services-Prioritization-Oregon.pdf): in-depth citizen engagement across the state. {check: The draft calls this “Medicare rationing”; the linked history is about the Oregon Health Plan (Medicaid).}
+- [**Oregon’s health services prioritization**](https://www.oregon.gov/oha/HPA/DSI-HERC/Documents/Brief-History-Health-Services-Prioritization-Oregon.pdf): in-depth citizen engagement across the state.
 - **Spotted owl engagement**
 - **Arcata’s economic development strategy engagement**
-
-{team: Still looking for an example of a group formed to gather and make sense of information on a complex topic.}

@@ -10,8 +10,6 @@ status: draft
 - For small purchases, the public often learns about AI tools only after they’re in use.
 :::
 
-{team: The outline left the third case open, and suggested the OHCS rulemaking example or Bend’s public-facing AI tools. The research tracker suggested a procurement case such as Flock. Bend’s Flock decision is drafted below because it is well documented and shows the public’s role in a *government use* decision. Swap it out if the team prefers another example.}
-
 The decision
 : Whether Bend police should use AI-powered stationary license plate reader cameras, and from which company
 

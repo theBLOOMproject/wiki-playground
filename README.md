@@ -37,11 +37,11 @@ status: draft
 ---
 ```
 
-`status` is `draft` (shows a Draft pill and reading time) or `soon` (shows "Coming soon"). Write everything after the header in normal markdown: `## Headings`, `**bold**`, `*italic*`, `[links](https://…)`, `- bullet lists`, `1. numbered lists`, and `| tables |`.
+`status` is `draft` (shows the reading time) or `soon` (shows "Coming soon"). Write everything after the header in normal markdown: `## Headings`, `**bold**`, `*italic*`, `[links](https://…)`, `- bullet lists`, `1. numbered lists`, and `| tables |`.
 
 ### Editor notes
 
-Wrap a note in curly braces. You can show or hide all notes with the **Editor notes** switch in the sidebar.
+Wrap a note in curly braces. Notes always show on the page (the site no longer has an on/off switch), so remove them before publishing.
 
 | Write | Shows as |
 |---|---|

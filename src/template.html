@@ -29,42 +29,6 @@
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #111923;
-    --surface: #17212D;
-    --surface-2: #1F2B3A;
-    --line: #2A3848;
-    --ink: #E5EBF2;
-    --muted: #9AA9BA;
-    --blue: #8FBAF0;
-    --blue-strong: #B3D0F5;
-    --blue-soft: #1D3150;
-    --orange: #F3A464;
-    --orange-bright: #F08C3E;
-    --orange-soft: #33261A;
-    --img-bg: #F4F6F9;
-    --shadow: none;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #111923;
-  --surface: #17212D;
-  --surface-2: #1F2B3A;
-  --line: #2A3848;
-  --ink: #E5EBF2;
-  --muted: #9AA9BA;
-  --blue: #8FBAF0;
-  --blue-strong: #B3D0F5;
-  --blue-soft: #1D3150;
-  --orange: #F3A464;
-  --orange-bright: #F08C3E;
-  --orange-soft: #33261A;
-  --img-bg: #F4F6F9;
-  --shadow: none;
-  color-scheme: dark;
-}
 *, *::before, *::after { box-sizing: inherit; }
 html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 16px); -webkit-text-size-adjust: 100%; }
 body {
@@ -178,8 +142,8 @@ strong { font-weight: 800; }
 /* ---------- Figures ---------- */
 figure { margin: 2em 0; }
 figcaption { margin-top: 10px; font-size: 0.88rem; line-height: 1.5; color: var(--muted); }
-.figure-img { display: block; padding: 14px; background: var(--img-bg); border: 1px solid var(--line); border-radius: 16px; }
-.figure-img img { display: block; margin: 0 auto; border-radius: 6px; }
+.figure-img { display: block; }
+.figure-img img { display: block; width: 100%; height: auto; max-height: min(75vh, 640px); object-fit: contain; }
 
 /* ---------- Tables ---------- */
 .table-wrap { overflow-x: auto; margin: 1.4em 0 1.8em; border: 1px solid var(--line); border-radius: 14px; }
@@ -225,6 +189,23 @@ tbody th { font-weight: 800; color: var(--ink); white-space: nowrap; }
 .rung.token { background: var(--orange-soft); border-color: var(--orange-bright); }
 .rung.non { background: var(--surface); border-color: var(--line); color: var(--muted); }
 
+/* ---------- Floor and ceiling ---------- */
+.fc { display: grid; gap: 10px; }
+.fc-head, .fc-band { display: grid; grid-template-columns: 110px repeat(3, minmax(0, 1fr)); gap: 10px; }
+.fc-head span { font-weight: 800; font-size: 0.95rem; color: var(--blue); padding: 0 4px; }
+.fc-band { padding: 12px; border-radius: 14px; border: 1px solid; }
+.fc-band.ceiling { background: var(--blue-soft); border-color: var(--blue); }
+.fc-band.floor { background: var(--orange-soft); border-color: var(--orange-bright); }
+.fc-label { margin: 0; font-weight: 800; font-size: 0.95rem; line-height: 1.25; color: var(--ink); align-self: center; }
+.fc-label span { display: block; font-weight: 600; font-size: 0.8rem; color: var(--muted); }
+.fc-band ul { list-style: none; padding: 0 !important; margin: 0 !important; display: grid; gap: 6px; align-content: end; }
+.fc-band li { margin: 0; padding: 6px 10px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; font-size: 0.86rem; line-height: 1.35; }
+
+/* ---------- Quotes ---------- */
+.content blockquote { margin: 1.4em 0; padding: 4px 0 4px 18px; border-left: 4px solid var(--orange-bright); color: var(--ink); }
+.content blockquote p { margin: 0.4em 0; }
+.content blockquote p:last-child:not(:first-child) { font-size: 0.9rem; color: var(--muted); }
+
 /* ---------- Coming soon ---------- */
 .soon-card { margin: 32px 0; padding: 26px 28px 14px; border: 2px dashed var(--line); border-radius: 18px; background: var(--surface); }
 .soon-card .soon-title { margin: 0 0 6px; font-weight: 800; font-size: 1.2rem; color: var(--blue); }
@@ -244,7 +225,6 @@ tbody th { font-weight: 800; color: var(--ink); white-space: nowrap; }
 .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin: 28px 0 0; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px; background: var(--blue); color: var(--bg); font-weight: 800; text-decoration: none; }
 .btn:hover { background: var(--blue-strong); }
-.home-progress { font-size: 0.93rem; color: var(--muted); font-weight: 600; }
 .outline { margin-top: 48px; }
 .outline-section { margin-bottom: 30px; }
 .outline-head { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; font-size: 1.15rem; }
@@ -256,7 +236,7 @@ tbody th { font-weight: 800; color: var(--ink); white-space: nowrap; }
 .outline-row a { font-weight: 700; line-height: 1.4; text-decoration: none; color: var(--ink); }
 .outline-row a:hover { color: var(--orange); text-decoration: underline; text-decoration-color: var(--orange-bright); }
 .outline-row .pill { justify-self: start; }
-.outline-row .time { text-align: right; font-size: 0.86rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+.outline-row .time { grid-column: 3; text-align: right; font-size: 0.86rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
 .home-note { margin-top: 36px; padding: 16px 20px; border-radius: 14px; background: var(--surface); font-size: 0.92rem; color: var(--muted); }
 .home-note p { margin: 0; }
 
@@ -300,6 +280,9 @@ tbody th { font-weight: 800; color: var(--ink); white-space: nowrap; }
   .ladder { grid-template-columns: 1fr; }
   .ladder-group { justify-content: flex-start; text-align: left; border-right: 0; padding: 12px 0 2px; }
   .ladder-group, .ladder-rungs { grid-column: 1; }
+  .fc-head { display: none; }
+  .fc-band { grid-template-columns: 1fr; }
+  .fc-band ul::before { content: attr(data-stage); font-weight: 800; font-size: 0.8rem; color: var(--muted); }
   .outline-row { grid-template-columns: minmax(0, 1fr) auto; padding-left: 20px; }
   .outline-row .time { grid-column: 2; }
   .outline-row .pill { grid-column: 1; grid-row: 2; justify-self: start; }
@@ -340,7 +323,6 @@ h4 { margin: 1.6em 0 0.3em; font-size: 1.02rem; font-weight: 800; color: var(--i
 td strong { color: var(--ink); }
 tbody td:first-child { font-weight: 700; }
 .pill { white-space: nowrap; }
-article[data-page="review-notes"] h1 { margin-bottom: 22px; }
 .outline-row { grid-template-columns: minmax(0, 1fr) 122px 74px; }
 .content ol > li::marker { font-weight: 800; color: var(--blue); }
 
@@ -410,11 +392,6 @@ article[data-page="review-notes"] h1 { margin-bottom: 22px; }
       <span class="brand-sub">Central Oregon Civic Assembly on AI</span>
     </a>
     <nav aria-label="Learning Center pages"><ul class="nav" id="nav"></ul></nav>
-    <div class="side-foot">
-      <a class="nav-link" href="#review-notes" data-target="review-notes"><span class="home-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 2.5h6l2.5 2.5v8.5H4z M9.5 2.5V5.5h3 M6 8.5h4.5 M6 11h4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>Review notes</a>
-      <label class="switch"><span>Editor notes</span><input type="checkbox" id="edToggle" checked><span class="track" aria-hidden="true"></span></label>
-      <p class="switch-hint">Flags, gaps, and internal sources from the working drafts</p>
-    </div>
   </aside>
 
   <main class="main" id="main">
@@ -485,25 +462,21 @@ article[data-page="review-notes"] h1 { margin-bottom: 22px; }
 
   // ---------- Home outline ----------
   var outline = document.getElementById("outline");
-  var drafted = 0, totalMin = 0;
   SECTIONS.forEach(function (s) {
     var wrap = el("section", { class: "outline-section" });
     wrap.appendChild(el("h2", { class: "outline-head" }, '<span class="num" aria-hidden="true">' + s.num + "</span>" + esc(s.title)));
     var ul = el("ul", { class: "outline-list" });
     s.pages.forEach(function (p) {
-      if (p.status === "draft") { drafted++; totalMin += p.minutes; }
       var li = el("li", p.sub ? { class: "sub" } : null);
       li.appendChild(el("div", { class: "outline-row" },
         '<a href="#' + p.id + '">' + esc(p.title) + "</a>" +
-        (p.status === "draft" ? '<span class="pill draft">Draft</span>' : '<span class="pill soon">Coming soon</span>') +
+        (p.status === "draft" ? "" : '<span class="pill soon">Coming soon</span>') +
         '<span class="time">' + (p.minutes ? p.minutes + " min read" : "—") + "</span>"));
       ul.appendChild(li);
     });
     wrap.appendChild(ul);
     outline.appendChild(wrap);
   });
-  document.getElementById("homeProgress").textContent =
-    drafted + " of " + ORDER.length + " pages drafted, about " + totalMin + " minutes of reading so far";
 
   // ---------- Page chrome ----------
   ORDER.forEach(function (p, i) {
@@ -513,7 +486,7 @@ article[data-page="review-notes"] h1 { margin-bottom: 22px; }
       art.insertBefore(el("p", { class: "crumb" }, '<a href="#' + p.section.pages[0].id + '">' + esc(p.section.title) + "</a>"), h1);
     }
     h1.insertAdjacentElement("afterend", el("p", { class: "meta" },
-      p.status === "draft" ? '<span class="pill draft">Draft</span><span>' + p.minutes + " min read</span>"
+      p.status === "draft" ? "<span>" + p.minutes + " min read</span>"
                            : '<span class="pill soon">Coming soon</span>'));
     var prev = i === 0 ? { id: "home", title: "Home" } : ORDER[i - 1];
     var next = ORDER[i + 1];
@@ -528,25 +501,11 @@ article[data-page="review-notes"] h1 { margin-bottom: 22px; }
   homePager.appendChild(el("a", { class: "next", href: "#" + ORDER[0].id },
     '<span class="dir">Next <span aria-hidden="true">→</span></span><span class="ttl">' + esc(ORDER[0].title) + "</span>"));
   articles.home.appendChild(homePager);
-  var rn = articles["review-notes"];
-  rn.insertBefore(el("p", { class: "crumb" }, "For the team"), rn.querySelector("h1"));
 
   document.querySelectorAll('a[href^="http"]').forEach(function (a) {
     a.setAttribute("target", "_blank");
     a.setAttribute("rel", "noopener noreferrer");
   });
-
-  // ---------- Editor notes switch ----------
-  var tog = document.getElementById("edToggle");
-  var saved = null;
-  try { saved = localStorage.getItem("lc-editor-notes"); } catch (e) {}
-  if (saved === "off") tog.checked = false;
-  function applyEd() {
-    document.body.classList.toggle("hide-ed", !tog.checked);
-    try { localStorage.setItem("lc-editor-notes", tog.checked ? "on" : "off"); } catch (e) {}
-  }
-  tog.addEventListener("change", applyEd);
-  applyEd();
 
   // ---------- Routing ----------
   var current = null;

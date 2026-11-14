@@ -224,13 +224,6 @@ function renderBody(page) {
   }
 }
 
-const LEGEND = `<div class="legend">
-      <span class="ed flag flag-check"><b>Check</b> a claim to verify</span>
-      <span class="ed flag flag-team"><b>Team</b> a gap to fill</span>
-      <span class="ed flag flag-new"><b>New source</b> added beyond the outline</span>
-      <span class="ed src">internal source</span>
-    </div>`;
-
 function renderHome(page, firstDraftId) {
   const $ = cheerio.load(renderBody(page), null, false);
   const note = $('div[data-c="home-note"]');
@@ -243,13 +236,9 @@ function renderHome(page, firstDraftId) {
   ${$.html().trim()}
   <div class="home-actions">
     <a class="btn" href="#${firstDraftId}">Start reading <span aria-hidden="true">→</span></a>
-    <span class="home-progress" id="homeProgress"></span>
   </div>
   <div class="outline" id="outline"></div>
-  <div class="home-note">
-    ${noteHtml}
-    ${LEGEND}
-  </div>
+  ${noteHtml ? `<div class="home-note">${noteHtml}</div>` : ""}
 </article>`;
 }
 

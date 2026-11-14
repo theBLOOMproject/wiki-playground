@@ -10,7 +10,7 @@ status: draft
 - Governments must consult with Tribes, government to government, before decisions that affect them.
 :::
 
-Several layers of government overlap in Central Oregon, and each has its own job. The state sets the rules that counties and cities must follow. The federal government sits above all of them and manages much of the region’s land, but this book focuses on state and local decisions. {src: [Layers of Government in Oregon](https://docs.google.com/document/d/1pQzROp3F_ySr_Dbe2pNVPy9VXi9HEH4GCRJ_6-6LqUg/edit?tab=t.0); [Who Governs Central Oregon](https://claude.ai/artifact/VC2TmuLmLzsX3auubhXxvt)}
+Several layers of government overlap in Central Oregon, and each has its own job. The state sets the rules that counties and cities must follow. The federal government sits above all of them and manages much of the region’s land, but this book focuses on state and local decisions.
 
 ::: wide
 | Layer | Who is in charge | What it does (examples) |
