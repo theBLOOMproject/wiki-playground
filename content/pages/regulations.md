@@ -21,9 +21,6 @@ Potential impacts and tradeoffs
 Where the public could have a say
 : Comments at council meetings, advocacy, and proposing community-informed policies
 
-Case study
-: [Bend’s license plate cameras](#case-license-plate-cameras)
-
 Regulations help rein in the potential negative effects of private industry, and place guardrails and guidance around the actions of government, corporate, and individual actors to serve the public interest.
 
 **Examples:**

@@ -80,19 +80,7 @@ sections:
 
   - title: "Appendix"
     pages:
-      - id: engagement-details
-        nav: "More on public engagement"
       - id: layers-of-government
         nav: "Layers of government"
-      - id: participation-models
-        nav: "Models of participation"
-      - id: ai-details
-        nav: "More on AI decisions"
       - id: where-ai-shows-up
         nav: "Where AI shows up locally"
-      - id: infrastructure
-        nav: "Infrastructure behind AI"
-      - id: why-now
-        nav: "Why AI is relevant now"
-      - id: case-license-plate-cameras
-        nav: "Bend’s license plate cameras"

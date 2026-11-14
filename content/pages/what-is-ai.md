@@ -44,7 +44,7 @@ AI is more than just the apps on our phones and computers. To make applications 
 | Piece | What it is | Why it matters locally |
 | --- | --- | --- |
 | **Internet** | The fiber-optic cables and networks that carry your request to a data center and bring the answer back | Fast, reliable connections are one reason companies choose a location |
-| **Chips** | Specialized computer chips are like the “brains” of AI. A single chip can perform trillions of calculations per second | Making chips takes factories, water, and minerals. Oregon has a large chip industry (see [the supply chain in Oregon](#infrastructure)) |
+| **Chips** | Specialized computer chips are like the “brains” of AI. A single chip can perform trillions of calculations per second | Making chips takes factories, water, and minerals. Oregon has a large chip industry |
 | **Data centers** | Buildings full of computers (with chips) that process requests and send answers back to users | They need land, water for cooling, and huge amounts of electricity |
 | **Power** | The electricity that runs and cools the computers | Data centers tend to consume a lot of electricity, which can affect the grid and power bills |
 
